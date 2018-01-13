@@ -1,0 +1,21 @@
+.container-both-phones{
+  border: 1px solid #8078B9;
+}
+.iphone-container,.android-container{
+  margin-top: 10px;
+}
+
+.iphone-container{
+  background: purple;
+}
+
+.android-container{
+  background: green;
+}
+
+.iphone-body, .android-body{
+  width: 300px;
+  height: 500px;
+  margin: 50px auto 50px auto;
+  background: black;
+}
