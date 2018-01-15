@@ -3,22 +3,23 @@
 	<head>
 		<title>Javascript 1</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="stylesheets/style.css">
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="node_modules/aos/dist/aos.js"></script>
+		<script src="script.js"></script>
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.min.js">
+		<link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 		<link rel="stylesheet" href="stylesheets/style.css">
-		<script src="scripts/script.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid container-both-phones">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12 iphone-container">
 
-					<div class="iphone-body">
+					<div class="iphone-body" data-aos-once="true" data-aos="slide-down">
 						<div class="iphone-screen">
 							<div class="iphone-keyboard">
 
@@ -75,7 +76,7 @@
 				</div>
 
 						<div class="col-md-6 col-sm-6 col-xs-12 android-container">
-									<div class="android-body">
+									<div class="android-body" data-aos-once="true" data-aos="slide-up">
 
 									</div>
 					</div>

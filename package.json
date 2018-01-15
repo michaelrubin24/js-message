@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/michaelrubin24/js-deposit#readme",
   "dependencies": {
+    "aos": "^2.2.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
   }
