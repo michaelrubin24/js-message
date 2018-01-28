@@ -1,6 +1,27 @@
+.hidden {
+  display: none;
+}
+
+input.error {
+ border: 1px solid #ff0000;
+}
+
+label.error {
+  position: absolute;
+  color: #ff0000;
+  font-weight: normal;
+}
+
+span.error {
+  position: absolute;
+  color: #ff0000;
+  font-weight: normal;
+}
+
 .container-both-phones{
   border: 1px solid #8078B9;
 }
+
 .iphone-container,.android-container{
   margin-top: 10px;
 }
@@ -24,17 +45,34 @@
 .iphone-body{
   border-radius: 14px;
  }
- .iphone-screen{
-   position: relative;
-   margin: 20px auto;
-   width: 260px;
-   height: 380px;
-   background: white;
-   /* padding-top: 280px; */
-   padding-top: 4px;
-   margin-bottom: 0px;
-   border-radius: 2px;
- }
+
+.iphone-screen{
+  position: relative;
+  margin: 20px auto;
+  width: 260px;
+  height: 380px;
+  background: white;
+  padding-top: 4px;
+  margin-bottom: 0px;
+  border-radius: 2px;
+  /*padding-top: 280px;*/
+}
+
+.sign_in_form {
+  width: 260px;
+  height: 380px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+div.mg-top-40px {
+  margin-top: 40px;
+}
+
+div.mg-bot-40px {
+  margin-bottom: 40px;
+}
+>>>>>>> Stashed changes
 
  .iphone-messages{
    height: 242px;
