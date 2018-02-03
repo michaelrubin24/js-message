@@ -4,8 +4,6 @@ var btn_android = document.getElementsByClassName('btn-android');
 var iphone_text_message = document.getElementsByClassName( 'iphone-text-message')[0];
 var android_text_message = document.getElementsByClassName('android-text-message')[0];
 
-
-
 var input_text_iphone = $('.iphone-text-message:first');
 var messages_iphone = $(".iphone-messages")[0];
 var message_wrapper_iphone = "message-wrapper-iphone";
@@ -20,6 +18,20 @@ var send_message_android =  $('.android-message-btn')[0];
 var send_message_iphone =  $('.iphone-message-btn')[0];
 var enter_android = $('.enter-android')[0];
 var enter_iphone = $('.enter-iphone')[0];
+
+function fillTextArea(btn, text_message){
+  for (var i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click', function(){
+      if(this.innerText == 'Пробел'){
+        text_message.value += " ";
+      }else{
+        text_message.value += this.innerText;
+        console.dir($('.iphone-text-message'));
+
+      }
+    })
+  }
+}
 
 function createMessage(input_text, messages_block_android, messages_block_iphone, message_wrapper_style, message_style){
   var message_wrapper = document.createElement("div");
@@ -72,12 +84,10 @@ function clearTextArea(){
       input_text_android[0].value = "";
     }
   })
+
 }
-
 fillTextArea(btn_iphone, iphone_text_message);
-
 fillTextArea(btn_android, android_text_message);
 
 callCreateMessage();
-
 clearTextArea();
