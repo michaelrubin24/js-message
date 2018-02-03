@@ -83,6 +83,42 @@ span.error {
   margin-bottom: 0px;
   border-radius: 6px;
 }
+
+.message-wrapper-iphone{
+  /* position: relative;
+  top: 4px;
+  left: 4px; */
+  background: blue;
+  width: 120px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.message-iphone{
+  width: 90px;
+  color: white;
+  overflow-x:hidden;
+  word-wrap:break-word;
+}
+
+.message-wrapper-android{
+  /* position: relative;
+  top: 4px;
+  left: 120px; */
+  background: #4BDAE2;
+  width: 120px;
+  margin-left: 120px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.message-android{
+  width: 90px;
+  color: white;
+  overflow-x:hidden;
+  word-wrap:break-word;
+}
 .samsung-logo{
   display:inline-block;
   position: absolute;
@@ -110,7 +146,8 @@ div.mg-bot-40px {
 }
 
 
- .iphone-messages{
+ .iphone-messages, .android-messages{
+   /* position: relative; */
    height: 242px;
    overflow-y: scroll;
  }
