@@ -26,8 +26,7 @@ function fillTextArea(btn, text_message){
         text_message.value += " ";
       }else{
         text_message.value += this.innerText;
-        console.dir($('.iphone-text-message'));
-
+        // console.dir($('.iphone-text-message'));
       }
     })
   }
@@ -84,7 +83,6 @@ function clearTextArea(){
       input_text_android[0].value = "";
     }
   })
-
 }
 fillTextArea(btn_iphone, iphone_text_message);
 fillTextArea(btn_android, android_text_message);
