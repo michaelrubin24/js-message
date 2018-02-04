@@ -47,78 +47,87 @@ span.error {
   width: 300px;
  }
  .android-body{
+   width: 286px;
    border-radius: 28px;
+   background: radial-gradient(circle at 80px 40px, #f9eec7, #ffb60f, #ffb60f);
    /* background: #CAD9EE; */
    /* background: #A3EEDB;---- */
    /* background: #A9B8CD; */
    /* background: radial-gradient(#CAD9EE, #fff); */
    /* background: radial-gradient(circle farthest-corner at 30px 20px, #fff,  #A3EEDB); */
    /* background: radial-gradient(circle farthest-corner at 30px 20px, #A9B8CD,  #A3EEDB); */
-   background: radial-gradient(circle at 80px 40px, #f9eec7, #ffb60f, #ffb60f);
    /* background: radial-gradient(circle at 80px 40px, #f9eec7, #A3EEDB, #CAD9EE); */
-
-
-   width: 286px;
  }
+.iphone-screen, .android-screen{
+  position: relative;
+  margin: 20px auto;
+  height: 380px;
+  background: white;
+  margin-bottom: 0px;
+  padding-top: 4px;
+}
 
 .iphone-screen{
-  position: relative;
-  margin: 20px auto;
   width: 260px;
-  height: 380px;
-  background: white;
-  padding-top: 4px;
-  margin-bottom: 0px;
   border-radius: 2px;
-  /*padding-top: 280px;*/
 }
 .android-screen{
-  position: relative;
-  margin: 20px auto;
   width: 268px;
-  height: 380px;
-  background: white;
-  /* padding-top: 280px; */
-  padding-top: 4px;
-  margin-bottom: 0px;
   border-radius: 6px;
 }
 
-.message-wrapper-iphone{
-  /* position: relative;
-  top: 4px;
-  left: 4px; */
-  background: blue;
+.message-wrapper-iphone, .message-wrapper-android {
+  position: relative;
+  text-align: center;
   width: 120px;
-  margin-left: 4px;
-  margin-bottom: 4px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 8px;
-  padding: 8px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  margin-bottom: 17px;
+  padding:1px;
 }
-.message-iphone{
-  width: 90px;
-  color: white;
-  overflow-x:hidden;
-  word-wrap:break-word;
+
+.message-wrapper-iphone:before, .message-wrapper-android:before{
+  content: ' ';
+  position: absolute;
+  width: 2px;
+  top: 100%;
+  border: 11px solid;
+}
+
+.message-wrapper-iphone{
+  background: blue;
+  border: 6px solid blue;
+  margin-left: 4px;
+}
+.message-wrapper-iphone:before{
+  left: 25px;
+	border-color: blue transparent transparent blue;
 }
 
 .message-wrapper-android{
-  /* position: relative;
-  top: 4px;
-  left: 120px; */
   background: #4BDAE2;
-  width: 120px;
+  border: 6px solid #4BDAE2;
   margin-left: 120px;
-  margin-bottom: 4px;
-  border-radius: 8px;
-  padding: 8px;
 }
-.message-android{
+
+.message-wrapper-android:before{
+  right: 12px;
+	border-color: #4BDAE2 transparent transparent #4BDAE2;
+  transform: rotate(90deg);
+}
+
+.message-iphone, .message-android{
   width: 90px;
   color: white;
   overflow-x:hidden;
   word-wrap:break-word;
+  font-weight: bold;
 }
+
 .samsung-logo{
   display:inline-block;
   position: absolute;
@@ -144,10 +153,7 @@ div.mg-top-40px {
 div.mg-bot-40px {
   margin-bottom: 40px;
 }
-
-
  .iphone-messages, .android-messages{
-   /* position: relative; */
    height: 242px;
    overflow-y: scroll;
  }
@@ -156,6 +162,17 @@ div.mg-bot-40px {
   position: absolute;
   bottom: 90px;
   margin-bottom: 10px;
+ }
+
+ .iphone-messages{
+   background-image: url("../images/animals.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .android-messages{
+   background-image: url("../images/flowers.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
  }
 
 .iphone-input-message span , .android-input-message span{
@@ -208,7 +225,6 @@ div.mg-bot-40px {
  }
 
  .action-buttons .btn-sm{
-   /* font-size:  */
    width: 24px;
    height: 24px;
  }
