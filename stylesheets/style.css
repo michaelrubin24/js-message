@@ -1,6 +1,27 @@
+.hidden {
+  display: none;
+}
+
+input.error {
+ border: 1px solid #ff0000;
+}
+
+label.error {
+  position: absolute;
+  color: #ff0000;
+  font-weight: normal;
+}
+
+span.error {
+  position: absolute;
+  color: #ff0000;
+  font-weight: normal;
+}
+
 .container-both-phones{
   border: 1px solid #8078B9;
 }
+
 .iphone-container,.android-container{
   margin-top: 10px;
 }
@@ -14,8 +35,253 @@
 }
 
 .iphone-body, .android-body{
+  padding-top: 40px;
   width: 300px;
   height: 500px;
   margin: 50px auto 50px auto;
+ }
+
+.iphone-body{
+  border-radius: 14px;
   background: black;
+  width: 300px;
+ }
+ .android-body{
+   border-radius: 28px;
+   /* background: #CAD9EE; */
+   /* background: #A3EEDB;---- */
+   /* background: #A9B8CD; */
+   /* background: radial-gradient(#CAD9EE, #fff); */
+   /* background: radial-gradient(circle farthest-corner at 30px 20px, #fff,  #A3EEDB); */
+   /* background: radial-gradient(circle farthest-corner at 30px 20px, #A9B8CD,  #A3EEDB); */
+   background: radial-gradient(circle at 80px 40px, #f9eec7, #ffb60f, #ffb60f);
+   /* background: radial-gradient(circle at 80px 40px, #f9eec7, #A3EEDB, #CAD9EE); */
+
+
+   width: 286px;
+ }
+
+.iphone-screen{
+  position: relative;
+  margin: 20px auto;
+  width: 260px;
+  height: 380px;
+  background: white;
+  padding-top: 4px;
+  margin-bottom: 0px;
+  border-radius: 2px;
+  /*padding-top: 280px;*/
 }
+.android-screen{
+  position: relative;
+  margin: 20px auto;
+  width: 268px;
+  height: 380px;
+  background: white;
+  /* padding-top: 280px; */
+  padding-top: 4px;
+  margin-bottom: 0px;
+  border-radius: 6px;
+}
+
+.message-wrapper-iphone{
+  /* position: relative;
+  top: 4px;
+  left: 4px; */
+  background: blue;
+  width: 120px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.message-iphone{
+  width: 90px;
+  color: white;
+  overflow-x:hidden;
+  word-wrap:break-word;
+}
+
+.message-wrapper-android{
+  /* position: relative;
+  top: 4px;
+  left: 120px; */
+  background: #4BDAE2;
+  width: 120px;
+  margin-left: 120px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.message-android{
+  width: 90px;
+  color: white;
+  overflow-x:hidden;
+  word-wrap:break-word;
+}
+.samsung-logo{
+  display:inline-block;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  letter-spacing: 3px;
+  color: #FFFCFB;
+  font-size: 20px;
+  font-weight: bold;
+ }
+
+.sign_in_form {
+  width: 260px;
+  height: 380px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+div.mg-top-40px {
+  margin-top: 40px;
+}
+
+div.mg-bot-40px {
+  margin-bottom: 40px;
+}
+
+
+ .iphone-messages, .android-messages{
+   /* position: relative; */
+   height: 242px;
+   overflow-y: scroll;
+ }
+
+ .iphone-input-message, .android-input-message{
+  position: absolute;
+  bottom: 90px;
+  margin-bottom: 10px;
+ }
+
+.iphone-input-message span , .android-input-message span{
+  background: #FFF;
+}
+
+.iphone-input-message span:hover, .android-input-message span:hover{
+  cursor: pointer;
+  border: 1px solid #66AFE9;
+}
+
+.android-message-btn, .android-select-keyboard{
+  color: #ffb60f;
+}
+
+.iphone-message-btn:hover, .android-message-btn:hover{
+  box-shadow: inset 0 0 6px;
+}
+
+.iphone-keyboard{
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  padding: 0 10px;
+  background: #D1D4D9;
+ }
+ .android-keyboard{
+   position: absolute;
+   bottom: 0px;
+   height: 100px;
+   padding: 0 14px;
+   background: #f9eec7;
+  }
+
+
+.iphone-keyboard .btn-sm, .android-keyboard .btn-sm {
+  width: 18px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Helvetica;
+  padding-top: 0px;
+  padding-left: 4px;
+  margin-top: 2px;
+  background: #FFFFFF;
+  }
+
+ .action-buttons{
+   margin-top: 2px;
+ }
+
+ .action-buttons .btn-sm{
+   /* font-size:  */
+   width: 24px;
+   height: 24px;
+ }
+
+ .action-buttons .probel{
+   width: 88px;
+   padding-left: 12px;
+ }
+
+ .action-buttons .enter{
+   width: 58px;
+   padding-left: 10px;
+ }
+
+  .action-buttons .numbers{
+   width: 30px;
+   padding-left: 2px;
+ }
+
+ .action-buttons .planet{
+   width: 24px;
+   padding-left: 4px;
+   padding-top: 2px;
+
+ }
+
+  .action-buttons .microphone{
+   width: 20px;
+   padding-left: 4px;
+   padding-top: 2px;
+   font-size: 12px;
+ }
+ .iphone-power-button{
+   width: 40px;
+   height: 40px;
+   border: 1px solid white;
+   border-radius: 20px;
+   background-color: black;
+   background: linear-gradient(to bottom,  #000, #fff);
+   margin: 10px auto;
+   padding-top: 5px;
+   padding-left: 8px;
+   color: black;
+   font-size: 24px;
+   box-shadow: inset 0 0 6px;
+ }
+
+ .android-power-button{
+    /* width: 40px;
+   height: 40px;
+   border: 1px solid white;
+   border-radius: 20px;
+   background-color: black;
+   background: linear-gradient(to bottom,  #000, #fff);
+   margin: 4px auto 10px auto;*/
+   padding-top: 0px;
+   padding-left: 26px;
+   color: #ffb60f;
+   font-size: 20px;
+   margin: 12px auto 10px auto;
+   box-shadow: inset 0 0 6px;
+   width: 70px;
+   height:26px;
+   background: white;
+   border: 2px solid #66AFE9;
+   border-radius: 24px;
+ }
+
+ .iphone-power-button:hover, .android-power-button:hover{
+   cursor: pointer;
+   opacity: 0.7;
+   border: 2px solid green;
+ }
+ .android-power-button:hover{
+   border: 3px solid #66AFE9;
+ }
