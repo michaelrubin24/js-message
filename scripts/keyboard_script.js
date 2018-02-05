@@ -42,6 +42,9 @@ function createMessage(input_text, messages_block_android, messages_block_iphone
     message_wrapper.appendChild(message);
     messages_block_android.appendChild(message_wrapper.cloneNode(true));
     messages_block_iphone.appendChild(message_wrapper);
+    message_wrapper.addEventListener('dblclick', function(){
+      this.remove();
+    })
   }else{
     input_text.val("мало символов :)");
   }
@@ -84,6 +87,7 @@ function clearTextArea(){
     }
   })
 }
+    // message_wrapper.scrollIntoView(top);
 fillTextArea(btn_iphone, iphone_text_message);
 fillTextArea(btn_android, android_text_message);
 
