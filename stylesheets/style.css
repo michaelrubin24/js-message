@@ -257,6 +257,12 @@ div.mg-bot-40px {
    padding-top: 2px;
    font-size: 12px;
  }
+
+ .upper-button{
+   padding-left: 2.5px !important;
+ }
+
+
  .iphone-power-button{
    width: 40px;
    height: 40px;
