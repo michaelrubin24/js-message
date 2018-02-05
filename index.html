@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript 1</title>
+		<meta charset="utf-8">
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
+		<script src="node_modules/aos/dist/aos.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="scripts/validation_rules.js"></script>
+		<script src="scripts/script.js"></script>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+		<script src="node_modules/jquery.caret/dist/jquery.caret.min.js"></script>
+		<script src="node_modules/jquery.caret/dist/jquery.caret.js"></script>
+		<link rel="stylesheet" href="stylesheets/style.css">
+	</head>
+	<body>
+		<div class="container-fluid container-both-phones">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-xs-12 iphone-container">
+					<div class="iphone-body" data-aos-once="true" data-aos="slide-down" data-aos-duration="1500">
+						<div class="iphone-screen">
+							<div class="sign_in_form hidden">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<form class="form-group" id="name_form">
+											<label for="user_name">User name</label>
+											<input id='user_name' type="text" name="user_name" class="form-control" placeholder="Your user name">
+											<div class="mg-top-40px">
+												<label for="first_name">First name</label>
+												<input id="first_name" type="text" name="first_name" class="form-control" placeholder="Your first name">
+											</div>
+											<div class="mg-top-40px mg-bot-40px">
+												<label for="second_name">Second name</label>
+												<input type="text" name="second_name" class="form-control" placeholder="Your second name">
+											</div>
+											<button id='submit' type="submit" class="btn btn-default center-block">Submit</button>
+										</form>
+
+										<!-- <form class="form-group" id="password_form">
+											<div>
+												<label for="email">Email</label>
+												<input type="email" name="email" class="form-control" placeholder="Your email">
+											</div>
+											<div class="mg-top">
+												<label for="password">Password</label>
+												<input type="password" name="password" id="password" class="form-control" placeholder="Your password">
+											</div>
+											<div class="mg-top mg-bot">
+												<label for="confirm_password">Confirm password</label>
+												<input type="password" name="confirm_password" class="form-control" placeholder="Confirm password">
+											</div>
+											<button type="submit" id='submit' class="btn btn-default center-block">Submit</button>
+										</form> -->
+									</div>
+								</div>
+							</div>
+							<div class="iphone-messages">
+								<!-- <p class="test">Lorem ipsum dolor sit amet,elit esse cillum dolore eu fugiat nulla pariatuidat.</p>
+								<p class="test">Lorem ipsuolorderit cupidat.</p>
+								<p class="test">Lorem ipvoluptate velaecat cupidat.</p> -->
+
+							</div>
+							 <div class="iphone-input-message input-group">
+								  <span class="iphone-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+								  <input type="text" class="form-control iphone-text-message" aria-label="message" placeholder="Сообщение..." value="">
+								  <span class="iphone-message-btn input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						  </div>
+							<div class="iphone-keyboard">
+
+								<button class="btn btn-default btn-sm btn-iphone">й</button>
+								<button class="btn btn-default btn-sm btn-iphone">ц</button>
+								<button class="btn btn-default btn-sm btn-iphone">у</button>
+								<button class="btn btn-default btn-sm btn-iphone">к</button>
+								<button class="btn btn-default btn-sm btn-iphone">е</button>
+								<button class="btn btn-default btn-sm btn-iphone">н</button>
+								<button class="btn btn-default btn-sm btn-iphone">г</button>
+								<button class="btn btn-default btn-sm btn-iphone">ш</button>
+								<button class="btn btn-default btn-sm btn-iphone">щ</button>
+								<button class="btn btn-default btn-sm btn-iphone">з</button>
+								<button class="btn btn-default btn-sm btn-iphone">х</button>
+
+								<button class="btn btn-default btn-sm btn-iphone">ф</button>
+								<button class="btn btn-default btn-sm btn-iphone">ы</button>
+								<button class="btn btn-default btn-sm btn-iphone">в</button>
+								<button class="btn btn-default btn-sm btn-iphone">а</button>
+								<button class="btn btn-default btn-sm btn-iphone">п</button>
+								<button class="btn btn-default btn-sm btn-iphone">р</button>
+								<button class="btn btn-default btn-sm btn-iphone">о</button>
+								<button class="btn btn-default btn-sm btn-iphone">л</button>
+								<button class="btn btn-default btn-sm btn-iphone">д</button>
+								<button class="btn btn-default btn-sm btn-iphone">ж</button>
+								<button class="btn btn-default btn-sm btn-iphone">э</button>
+
+								<button class="btn btn-default btn-sm btn-iphone">*</button>
+								<button class="btn btn-default btn-sm btn-iphone">я</button>
+								<button class="btn btn-default btn-sm btn-iphone">ч</button>
+								<button class="btn btn-default btn-sm btn-iphone">с</button>
+								<button class="btn btn-default btn-sm btn-iphone">м</button>
+								<button class="btn btn-default btn-sm btn-iphone">и</button>
+								<button class="btn btn-default btn-sm btn-iphone">т</button>
+								<button class="btn btn-default btn-sm btn-iphone">ь</button>
+								<button class="btn btn-default btn-sm btn-iphone">б</button>
+								<button class="btn btn-default btn-sm btn-iphone">ю</button>
+								<button class="btn btn-default btn-sm btn-iphone">*</button>
+								<div class="action-buttons">
+									<button class="btn btn-default btn-sm numbers">123</button>
+									<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
+									<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+									<button class="btn btn-default btn-sm probel btn-iphone">Пробел</button>
+									<button class="btn btn-default btn-sm enter enter-iphone">Ввод</button>
+
+								</div>
+
+
+							</div>
+
+						</div>
+						<div class="iphone-power-button">
+							<span class="glyphicon glyphicon-unchecked"></span>
+						</div>
+
+					</div>
+
+				</div>
+
+						<div class="col-md-6 col-sm-6 col-xs-12 android-container">
+									<div class="android-body" data-aos-once="true" data-aos="slide-up" data-aos-duration="1500">
+
+										<!-- <span class="glyphicon glyphicon-option-horizontal"></span> -->
+										<span class="samsung-logo">samsung</span>
+										<div class="android-screen">
+											<div class="android-messages">
+
+											</div>
+											 <div class="android-input-message input-group">
+												  <span class="android-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+												  <input type="text" class="form-control android-text-message" aria-label="message" placeholder="Напишите сообщение...">
+												  <span class="android-message-btn input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+										 	</div>
+											<div class="android-keyboard">
+
+												<button class="btn btn-default btn-sm btn-android">й</button>
+												<button class="btn btn-default btn-sm btn-android">ц</button>
+												<button class="btn btn-default btn-sm btn-android">у</button>
+												<button class="btn btn-default btn-sm btn-android">к</button>
+												<button class="btn btn-default btn-sm btn-android">е</button>
+												<button class="btn btn-default btn-sm btn-android">н</button>
+												<button class="btn btn-default btn-sm btn-android">г</button>
+												<button class="btn btn-default btn-sm btn-androide">ш</button>
+												<button class="btn btn-default btn-sm btn-android">щ</button>
+												<button class="btn btn-default btn-sm btn-android">з</button>
+												<button class="btn btn-default btn-sm btn-android">х</button>
+
+												<button class="btn btn-default btn-sm btn-android">ф</button>
+												<button class="btn btn-default btn-sm btn-android">ы</button>
+												<button class="btn btn-default btn-sm btn-android">в</button>
+												<button class="btn btn-default btn-sm btn-android">а</button>
+												<button class="btn btn-default btn-sm btn-android">п</button>
+												<button class="btn btn-default btn-sm btn-android">р</button>
+												<button class="btn btn-default btn-sm btn-android">о</button>
+												<button class="btn btn-default btn-sm btn-android">л</button>
+												<button class="btn btn-default btn-sm btn-android">д</button>
+												<button class="btn btn-default btn-sm btn-android">ж</button>
+												<button class="btn btn-default btn-sm btn-android">э</button>
+
+												<button class="btn btn-default btn-sm btn-android">*</button>
+												<button class="btn btn-default btn-sm btn-android">я</button>
+												<button class="btn btn-default btn-sm btn-android">ч</button>
+												<button class="btn btn-default btn-sm btn-android">с</button>
+												<button class="btn btn-default btn-sm btn-android">м</button>
+												<button class="btn btn-default btn-sm btn-android">и</button>
+												<button class="btn btn-default btn-sm btn-android">т</button>
+												<button class="btn btn-default btn-sm btn-android">ь</button>
+												<button class="btn btn-default btn-sm btn-android">б</button>
+												<button class="btn btn-default btn-sm btn-android">ю</button>
+												<button class="btn btn-default btn-sm btn-android">*</button>
+												<div class="action-buttons">
+													<button class="btn btn-default btn-sm numbers">123</button>
+													<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
+													<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+													<button class="btn btn-default btn-sm probel btn-android">Пробел</button>
+													<button class="btn btn-default btn-sm enter enter-android">Ввод</button>
+
+												</div>
+
+
+											</div>
+
+										</div>
+										<div class="android-power-button">
+											<span class="glyphicon glyphicon-star"></span>
+											<!-- <span class="glyphicon glyphicon-home"></span> -->
+										</div>
+									</div>
+					</div>
+			</div>
+		</div>
+		<script src="scripts/keyboard_script.js"></script>
+	</body>
+</html>
