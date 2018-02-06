@@ -29,6 +29,11 @@ var keyboard_en_android = $('.keyboard-en-android');
 var change_iphone_language = $('.change-iphone-language');
 var change_android_language = $('.change-android-language');
 
+var keyboard_number_iphone = $('.keyboard-number-iphone');
+var keyboard_number_android = $('.keyboard-number-android');
+var numbers_iphone = $('.numbers-iphone');
+var numbers_android = $('.numbers-android');
+
 // .hidden-keyboard
 
 // console.log(upper);
@@ -38,9 +43,7 @@ function fillTextArea(btn, text_message, upper){
       if(this.innerText == 'Пробел'){
         text_message.value += " ";
       }else if(upper.hasClass("active-upper")){
-        console.log(6);
         text_message.value += this.innerText.toUpperCase();
-        console.log(this);
       }else{
         text_message.value += this.innerText;
       }
@@ -122,31 +125,39 @@ function toggleUpperCase(upper_iphone, upper_android){
 }
 
 function changeLanguage(keyboard_ru_iphone, keyboard_ru_android, keyboard_en_iphone, keyboard_en_android, change_iphone_language, change_android_language){
-  console.log(2);
   change_iphone_language.click(function(){
-        console.log(3);
     keyboard_ru_iphone.toggleClass('hidden-keyboard');
     keyboard_en_iphone.toggleClass('hidden-keyboard');
   });
-  // change_iphone_language.addEventListener('click', function(){
-  //   keyboard_ru_iphone.toggleClass('hidden-keyboard');
-  //   keyboard_en_iphone.toggleClass('hidden-keyboard');
-  //   console.log(3);
-  // });
-  // change_android_language.addEventListener('click', function(){
-  //   keyboard_ru_android.toggleClass('hidden-keyboard');
-  //   keyboard_en_android.toggleClass('hidden-keyboard');
-  //   console.log(4);
-  // });
-
 
   change_android_language.click(function(){
     keyboard_ru_android.toggleClass('hidden-keyboard');
     keyboard_en_android.toggleClass('hidden-keyboard');
-    console.log(4);
+  });
+}
+function changeOnNumbers(numbers_iphone, numbers_android, keyboard_number_iphone, keyboard_number_android, keyboard_ru_iphone, keyboard_ru_android, keyboard_en_iphone, keyboard_en_android){
+  numbers_iphone.click(function(){
+    if($('.keyboard-ru-iphone:not(.hidden-keyboard)')){
+      keyboard_ru_iphone.toggleClass('hidden-keyboard');
+      keyboard_number_iphone.toggleClass('hidden-keyboard');
+    }else if($('.keyboard-en-iphone:not(.hidden-keyboard)')){
+      keyboard_en_iphone.toggleClass('hidden-keyboard');
+      keyboard_number_iphone.toggleClass('hidden-keyboard');
+    }
+  });
+
+  numbers_android.click(function(){
+    if($('.keyboard-ru-android:not(.hidden-keyboard)')){
+      keyboard_ru_android.toggleClass('hidden-keyboard');
+      keyboard_number_android.toggleClass('hidden-keyboard');
+    }else if($('.keyboard-en-android:not(.hidden-keyboard)')){
+      keyboard_en_android.toggleClass('hidden-keyboard');
+      keyboard_number_android.toggleClass('hidden-keyboard');
+    }
   });
 }
 changeLanguage(keyboard_ru_iphone, keyboard_ru_android, keyboard_en_iphone, keyboard_en_android, change_iphone_language, change_android_language);
+changeOnNumbers(numbers_iphone, numbers_android, keyboard_number_iphone, keyboard_number_android, keyboard_ru_iphone, keyboard_ru_android, keyboard_en_iphone, keyboard_en_android);
 toggleUpperCase(upper_iphone, upper_android);
 fillTextArea(btn_iphone, iphone_text_message, upper_iphone);
 fillTextArea(btn_android, android_text_message, upper_android);
