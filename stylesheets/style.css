@@ -276,11 +276,10 @@ div.mg-bot-40px {
 .pd-t-0{
   padding-top: 0px !important;
 }
-.bracket{
+.bracket, .doggy{
   font-size: 12px !important;
 }
 .doggy{
-  font-size: 12px !important;
   padding-left: 2px !important;
 }
 
