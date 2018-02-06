@@ -15,6 +15,9 @@
 		<script src="scripts/data_base.js"></script>
 		<script src="scripts/authorisation.js"></script>
 		<script src="scripts/online.js"></script>
+		<script src="scripts/keyboard_script.js"></script>
+		<script src="node_modules/jquery.caret/dist/jquery.caret.min.js"></script>
+		<script src="node_modules/jquery.caret/dist/jquery.caret.js"></script>
 		<script src="scripts/script.js"></script>
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -44,250 +47,243 @@
 								</div>
 							</div>
 							<div class="registration-form hidden">
-								<div class="row">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<form class="form-group" id="name_form">
-											<label id="server_user_name_error" for="server-error" class="server-error"></label>
-											<label for="user_name">Логин</label>
-											<input  id="user_name" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
-											<div class="mg-top-40px">
-												<label for="first_name">Имя</label>
-												<input id="first_name" type="text" name="first_name" class="form-control" placeholder="Ваше имя">
-											</div>
-											<div class="mg-top-40px mg-bot-40px">
-												<label for="last_name">Фамилия</label>
-												<input id="last_name"type="text" name="last_name" class="form-control" placeholder="Ваша фамилия">
-											</div>
-											<button id='submit' type="submit" class="btn btn-default center-block">Продолжить</button>
-										</form>
-										<form class="form-group hidden" id="password_form">
-											<label id="server_password_error" for="server-error" class="server-error"></label>
-											<label for="email">Email</label>
-											<input id="email" type="email" name="email" class="form-control" placeholder="Ваш email">
-											<div class="mg-top-40px">
-												<label for="password">Пароль</label>
-												<input id="password" type="password" name="password" id="password" class="form-control" placeholder="Ваш пароль">
-											</div>
-											<div class="mg-top-40px mg-bot-40px">
-												<label for="confirm_password">Подтвердите пароль</label>
-												<input type="password" name="confirm_password" class="form-control" placeholder="Подтвердите пароль">
-											</div>
-											<button type="submit" id='submit' class="btn btn-default btn-success center-block">Зарегестрироваться</button>
-										</form>
-										<div id="ty-for-registration" class="hidden">
-											<p class="bold text-center"><strong>Благодарим за регистрацию!</strong></p>
-											<div class="mg-bot-20px"></div>
-											<button id="sign_up_after_registration" class="btn btn-primary center-block">Войти</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="sign-up-form hidden">
-								<div class="row">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<label id="sign_up_error" class="server-error"></label>
-										<label for="user_name">Логин</label>
-										<input  id="user_name_sign_up" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
-										<div class="mg-bot-20px"></div>
-										<label for="password">Пароль</label>
-										<input id="password_sign_up" type="password" name="password" id="password" class="form-control" placeholder="Ваш пароль">
-										<div class="mg-bot-40px"></div>
-										<button id="sign_up_continue" class="btn btn-primary center-block">Войти</button>
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="iphone-messages hidden">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-							</div>
-							 <div class="iphone-input-message input-group hidden">
-								  <span class="iphone-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
-								  <input type="text" class="form-control" aria-label="message" placeholder="Сообщение...">
-								  <span class="iphone-message-btn input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-						  </div>
-							<div class="iphone-keyboard hidden">
-
-								<button class="btn btn-default btn-sm">й</button>
-								<button class="btn btn-default btn-sm">ц</button>
-								<button class="btn btn-default btn-sm">у</button>
-								<button class="btn btn-default btn-sm">к</button>
-								<button class="btn btn-default btn-sm">е</button>
-								<button class="btn btn-default btn-sm">н</button>
-								<button class="btn btn-default btn-sm">г</button>
-								<button class="btn btn-default btn-sm">ш</button>
-								<button class="btn btn-default btn-sm">щ</button>
-								<button class="btn btn-default btn-sm">з</button>
-								<button class="btn btn-default btn-sm">х</button>
-
-								<button class="btn btn-default btn-sm">ф</button>
-								<button class="btn btn-default btn-sm">ы</button>
-								<button class="btn btn-default btn-sm">в</button>
-								<button class="btn btn-default btn-sm">а</button>
-								<button class="btn btn-default btn-sm">п</button>
-								<button class="btn btn-default btn-sm">р</button>
-								<button class="btn btn-default btn-sm">о</button>
-								<button class="btn btn-default btn-sm">л</button>
-								<button class="btn btn-default btn-sm">д</button>
-								<button class="btn btn-default btn-sm">ж</button>
-								<button class="btn btn-default btn-sm">э</button>
-
-								<button class="btn btn-default btn-sm">*</button>
-								<button class="btn btn-default btn-sm">я</button>
-								<button class="btn btn-default btn-sm">ч</button>
-								<button class="btn btn-default btn-sm">с</button>
-								<button class="btn btn-default btn-sm">м</button>
-								<button class="btn btn-default btn-sm">и</button>
-								<button class="btn btn-default btn-sm">т</button>
-								<button class="btn btn-default btn-sm">ь</button>
-								<button class="btn btn-default btn-sm">б</button>
-								<button class="btn btn-default btn-sm">ю</button>
-								<button class="btn btn-default btn-sm">*</button>
-								<div class="action-buttons">
-									<button class="btn btn-default btn-sm numbers">123</button>
-									<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
-									<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
-									<button class="btn btn-default btn-sm probel">Пробел</button>
-									<button class="btn btn-default btn-sm enter">Ввод</button>
-								</div>
-							</div>
-							<div class="iphone-power-button">
-								<span class="glyphicon glyphicon-unchecked"></span>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 android-container">
-					<div class="android-body" data-aos-once="true" data-aos="slide-up" data-aos-duration="1500">
-						<span class="samsung-logo">samsung</span>
-							<div class="android-screen">
-								<div id="welcome_window_android" class="welcome-window_android">
 									<div class="row">
 										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<h1 class="brand-name text-center">GrowUP</h1>
-											<div class="brand-divider center-block"></div>
-											<h2 class="brand-inscription text-center">messenger</h2>
-											<div class="sign-buttons text-center">
-												<button id="registration_android" class="btn btn-success">Регистрация</button>
-												<button id="sign_up_android" class="btn btn-primary">Вход</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="registration_form_android" class="registration-form_android hidden">
-									<div class="row">
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<form class="form-group" id="name_form_android">
-												<label id="server_user_name_error_android" for="server-error" class="server-error"></label>
+											<form class="form-group" id="name_form">
+												<label id="server_user_name_error" for="server-error" class="server-error"></label>
 												<label for="user_name">Логин</label>
-												<input  id="user_name_android" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
+												<input  id="user_name" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
 												<div class="mg-top-40px">
 													<label for="first_name">Имя</label>
-													<input id="first_name_android" type="text" name="first_name" class="form-control" placeholder="Ваше имя">
+													<input id="first_name" type="text" name="first_name" class="form-control" placeholder="Ваше имя">
 												</div>
 												<div class="mg-top-40px mg-bot-40px">
 													<label for="last_name">Фамилия</label>
-													<input id="last_name_android"type="text" name="last_name" class="form-control" placeholder="Ваша фамилия">
+													<input id="last_name"type="text" name="last_name" class="form-control" placeholder="Ваша фамилия">
 												</div>
-												<button id='submit_android' type="submit" class="btn btn-default center-block">Продолжить</button>
+												<button id='submit' type="submit" class="btn btn-default center-block">Продолжить</button>
 											</form>
-											<form class="form-group hidden" id="password_form_android">
+											<form class="form-group hidden" id="password_form">
+												<label id="server_password_error" for="server-error" class="server-error"></label>
 												<label for="email">Email</label>
-												<input id="email_android" type="email" name="email" class="form-control" placeholder="Ваш email">
+												<input id="email" type="email" name="email" class="form-control" placeholder="Ваш email">
 												<div class="mg-top-40px">
 													<label for="password">Пароль</label>
-													<input id="password_android" type="password" name="password" id="password" class="form-control" placeholder="Ваш пароль">
+													<input id="password" type="password" name="password" id="password" class="form-control" placeholder="Ваш пароль">
 												</div>
 												<div class="mg-top-40px mg-bot-40px">
-													<label for="confirm_password_android">Подтвердите пароль</label>
+													<label for="confirm_password">Подтвердите пароль</label>
 													<input type="password" name="confirm_password" class="form-control" placeholder="Подтвердите пароль">
 												</div>
-												<button type="submit" id='submit_android' class="btn btn-default btn-success center-block">Зарегестрироваться</button>
+												<button type="submit" id='submit' class="btn btn-default btn-success center-block">Зарегестрироваться</button>
 											</form>
-											<div id="ty-for-registration_android" class="hidden">
+											<div id="ty-for-registration" class="hidden">
 												<p class="bold text-center"><strong>Благодарим за регистрацию!</strong></p>
 												<div class="mg-bot-20px"></div>
-												<button id="sign_up_after_registration_android" class="btn btn-primary center-block">Войти</button>
+												<button id="sign_up_after_registration" class="btn btn-primary center-block">Войти</button>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div id="sign_up_form_android" class="sign-up-form_android hidden">
-									<div class="row">
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<label id="sign_up_error_android" class="server-error"></label>
-											<label for="user_name">Логин</label>
-											<input  id="user_name_sign_up_android" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
-											<div class="mg-bot-20px"></div>
-											<label for="password">Пароль</label>
-											<input id="password_sign_up_android" type="password" name="password" class="form-control" placeholder="Ваш пароль">
-											<div class="mg-bot-40px"></div>
-											<button id="sign_up_continue_android" class="btn btn-primary center-block">Войти</button>
-										</div>
-									</div>
-								</div>
-								<div class="iphone-messages hidden">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-								</div>
-								<div class="android-input-message input-group hidden">
-									<span class="android-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
-								  <input type="text" class="form-control" aria-label="message" placeholder="Напишите сообщение...">
-								  <span class="android-message-btn input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
-							 	</div>
-								<div class="android-keyboard hidden">
-									<button class="btn btn-default btn-sm">й</button>
-									<button class="btn btn-default btn-sm">ц</button>
-									<button class="btn btn-default btn-sm">у</button>
-									<button class="btn btn-default btn-sm">к</button>
-									<button class="btn btn-default btn-sm">е</button>
-									<button class="btn btn-default btn-sm">н</button>
-									<button class="btn btn-default btn-sm">г</button>
-									<button class="btn btn-default btn-sm">ш</button>
-									<button class="btn btn-default btn-sm">щ</button>
-									<button class="btn btn-default btn-sm">з</button>
-									<button class="btn btn-default btn-sm">х</button>
-
-									<button class="btn btn-default btn-sm">ф</button>
-									<button class="btn btn-default btn-sm">ы</button>
-									<button class="btn btn-default btn-sm">в</button>
-									<button class="btn btn-default btn-sm">а</button>
-									<button class="btn btn-default btn-sm">п</button>
-									<button class="btn btn-default btn-sm">р</button>
-									<button class="btn btn-default btn-sm">о</button>
-									<button class="btn btn-default btn-sm">л</button>
-									<button class="btn btn-default btn-sm">д</button>
-									<button class="btn btn-default btn-sm">ж</button>
-									<button class="btn btn-default btn-sm">э</button>
-
-									<button class="btn btn-default btn-sm">*</button>
-									<button class="btn btn-default btn-sm">я</button>
-									<button class="btn btn-default btn-sm">ч</button>
-									<button class="btn btn-default btn-sm">с</button>
-									<button class="btn btn-default btn-sm">м</button>
-									<button class="btn btn-default btn-sm">и</button>
-									<button class="btn btn-default btn-sm">т</button>
-									<button class="btn btn-default btn-sm">ь</button>
-									<button class="btn btn-default btn-sm">б</button>
-									<button class="btn btn-default btn-sm">ю</button>
-									<button class="btn btn-default btn-sm">*</button>
-									<div class="action-buttons">
-										<button class="btn btn-default btn-sm numbers">123</button>
-										<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
-										<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
-										<button class="btn btn-default btn-sm probel">Пробел</button>
-										<button class="btn btn-default btn-sm enter">Ввод</button>
-									</div>
-								</div>
-							</div>
-							<div class="android-power-button">
-								<span class="glyphicon glyphicon-star"></span>
+					<div class="sign-up-form hidden">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<label id="sign_up_error" class="server-error"></label>
+								<label for="user_name">Логин</label>
+								<input  id="user_name_sign_up" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
+								<div class="mg-bot-20px"></div>
+								<label for="password">Пароль</label>
+								<input id="password_sign_up" type="password" name="password" id="password" class="form-control" placeholder="Ваш пароль">
+								<div class="mg-bot-40px"></div>
+								<button id="sign_up_continue" class="btn btn-primary center-block">Войти</button>
 							</div>
 						</div>
 					</div>
+					<div class="iphone-messages hidden">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>							</div>
+					<div class="iphone-input-message input-group hidden">
+						<span class="iphone-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+						<input type="text" class="form-control iphone-text-message" aria-label="message" placeholder="Сообщение..." value="">
+						<span class="iphone-message-btn input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					</div>
+					<div class="iphone-keyboard hidden">
+
+						<button class="btn btn-default btn-sm btn-iphone">й</button>
+						<button class="btn btn-default btn-sm btn-iphone">ц</button>
+						<button class="btn btn-default btn-sm btn-iphone">у</button>
+						<button class="btn btn-default btn-sm btn-iphone">к</button>
+						<button class="btn btn-default btn-sm btn-iphone">е</button>
+						<button class="btn btn-default btn-sm btn-iphone">н</button>
+						<button class="btn btn-default btn-sm btn-iphone">г</button>
+						<button class="btn btn-default btn-sm btn-iphone">ш</button>
+						<button class="btn btn-default btn-sm btn-iphone">щ</button>
+						<button class="btn btn-default btn-sm btn-iphone">з</button>
+						<button class="btn btn-default btn-sm btn-iphone">х</button>
+
+						<button class="btn btn-default btn-sm btn-iphone">ф</button>
+						<button class="btn btn-default btn-sm btn-iphone">ы</button>
+						<button class="btn btn-default btn-sm btn-iphone">в</button>
+						<button class="btn btn-default btn-sm btn-iphone">а</button>
+						<button class="btn btn-default btn-sm btn-iphone">п</button>
+						<button class="btn btn-default btn-sm btn-iphone">р</button>
+						<button class="btn btn-default btn-sm btn-iphone">о</button>
+						<button class="btn btn-default btn-sm btn-iphone">л</button>
+						<button class="btn btn-default btn-sm btn-iphone">д</button>
+						<button class="btn btn-default btn-sm btn-iphone">ж</button>
+						<button class="btn btn-default btn-sm btn-iphone">э</button>
+
+						<button class="btn btn-default btn-sm btn-iphone upper-button upper-case-iphone"><i class="fa fa-arrow-circle-up"></i></button>
+						<button class="btn btn-default btn-sm btn-iphone">я</button>
+						<button class="btn btn-default btn-sm btn-iphone">ч</button>
+						<button class="btn btn-default btn-sm btn-iphone">с</button>
+						<button class="btn btn-default btn-sm btn-iphone">м</button>
+						<button class="btn btn-default btn-sm btn-iphone">и</button>
+						<button class="btn btn-default btn-sm btn-iphone">т</button>
+						<button class="btn btn-default btn-sm btn-iphone">ь</button>
+						<button class="btn btn-default btn-sm btn-iphone">б</button>
+						<button class="btn btn-default btn-sm btn-iphone">ю</button>
+						<button class="btn btn-default btn-sm btn-iphone">*</button>
+						<div class="action-buttons">
+							<button class="btn btn-default btn-sm numbers">123</button>
+							<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
+							<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+						</div>
+					</div>
+					</div>
+					<div class="iphone-power-button">
+						<span class="glyphicon glyphicon-unchecked"></span>
+					</div>
 				</div>
 			</div>
-		</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 android-container">
+						<div class="android-body" data-aos-once="true" data-aos="slide-up" data-aos-duration="1500">
+							<span class="samsung-logo">samsung</span>
+							<div class="android-screen">
+										<div id="welcome_window_android" class="welcome-window_android">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<h1 class="brand-name text-center">GrowUP</h1>
+													<div class="brand-divider center-block"></div>
+													<h2 class="brand-inscription text-center">messenger</h2>
+													<div class="sign-buttons text-center">
+														<button id="registration_android" class="btn btn-success">Регистрация</button>
+														<button id="sign_up_android" class="btn btn-primary">Вход</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="registration_form_android" class="registration-form_android hidden">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<form class="form-group" id="name_form_android">
+														<label id="server_user_name_error_android" for="server-error" class="server-error"></label>
+														<label for="user_name">Логин</label>
+														<input  id="user_name_android" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
+														<div class="mg-top-40px">
+															<label for="first_name">Имя</label>
+															<input id="first_name_android" type="text" name="first_name" class="form-control" placeholder="Ваше имя">
+														</div>
+														<div class="mg-top-40px mg-bot-40px">
+															<label for="last_name">Фамилия</label>
+															<input id="last_name_android"type="text" name="last_name" class="form-control" placeholder="Ваша фамилия">
+														</div>
+														<button id='submit_android' type="submit" class="btn btn-default center-block">Продолжить</button>
+													</form>
+													<form class="form-group hidden" id="password_form_android">
+														<span id="server_password_error_android"></span>
+														<label for="email">Email</label>
+														<input id="email_android" type="email" name="email" class="form-control" placeholder="Ваш email">
+														<div class="mg-top-40px">
+															<label for="password">Пароль</label>
+															<input id="password_android" type="password" name="password" id="password" class="form-control" placeholder="Ваш пароль">
+														</div>
+														<div class="mg-top-40px mg-bot-40px">
+															<label for="confirm_password_android">Подтвердите пароль</label>
+															<input type="password" name="confirm_password" class="form-control" placeholder="Подтвердите пароль">
+														</div>
+														<button type="submit" id='submit_android' class="btn btn-default btn-success center-block">Зарегестрироваться</button>
+													</form>
+													<div id="ty-for-registration_android" class="hidden">
+														<p class="bold text-center"><strong>Благодарим за регистрацию!</strong></p>
+														<div class="mg-bot-20px"></div>
+														<button id="sign_up_after_registration_android" class="btn btn-primary center-block">Войти</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="sign_up_form_android" class="sign-up-form_android hidden">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<label id="sign_up_error_android" class="server-error"></label>
+													<label for="user_name">Логин</label>
+													<input  id="user_name_sign_up_android" type="text" name="user_name" class="form-control" placeholder="Ваш логин">
+													<div class="mg-bot-20px"></div>
+													<label for="password">Пароль</label>
+													<input id="password_sign_up_android" type="password" name="password" class="form-control" placeholder="Ваш пароль">
+													<div class="mg-bot-40px"></div>
+													<button id="sign_up_continue_android" class="btn btn-primary center-block">Войти</button>
+												</div>
+											</div>
+										</div>
+										<div class="android-input-message input-group hidden">
+											<span class="android-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+											<input type="text" class="form-control" aria-label="message" placeholder="Напишите сообщение...">
+											<span class="android-message-btn input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+										</div>
+										<div class="android-keyboard hidden">
+											<button class="btn btn-default btn-sm">й</button>
+											<button class="btn btn-default btn-sm">ц</button>
+											<button class="btn btn-default btn-sm">у</button>
+											<button class="btn btn-default btn-sm">к</button>
+											<button class="btn btn-default btn-sm">е</button>
+											<button class="btn btn-default btn-sm">н</button>
+											<button class="btn btn-default btn-sm">г</button>
+											<button class="btn btn-default btn-sm">ш</button>
+											<button class="btn btn-default btn-sm">щ</button>
+											<button class="btn btn-default btn-sm">з</button>
+											<button class="btn btn-default btn-sm">х</button>
+
+											<button class="btn btn-default btn-sm">ф</button>
+											<button class="btn btn-default btn-sm">ы</button>
+											<button class="btn btn-default btn-sm">в</button>
+											<button class="btn btn-default btn-sm">а</button>
+											<button class="btn btn-default btn-sm">п</button>
+											<button class="btn btn-default btn-sm">р</button>
+											<button class="btn btn-default btn-sm">о</button>
+											<button class="btn btn-default btn-sm">л</button>
+											<button class="btn btn-default btn-sm">д</button>
+											<button class="btn btn-default btn-sm">ж</button>
+											<button class="btn btn-default btn-sm">э</button>
+
+											<button class="btn btn-default btn-sm">*</button>
+											<button class="btn btn-default btn-sm">я</button>
+											<button class="btn btn-default btn-sm">ч</button>
+											<button class="btn btn-default btn-sm">с</button>
+											<button class="btn btn-default btn-sm">м</button>
+											<button class="btn btn-default btn-sm">и</button>
+											<button class="btn btn-default btn-sm">т</button>
+											<button class="btn btn-default btn-sm">ь</button>
+											<button class="btn btn-default btn-sm">б</button>
+											<button class="btn btn-default btn-sm">ю</button>
+											<button class="btn btn-default btn-sm">*</button>
+											<div class="action-buttons">
+												<button class="btn btn-default btn-sm numbers">123</button>
+												<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
+												<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+												<button class="btn btn-default btn-sm probel">Пробел</button>
+												<button class="btn btn-default btn-sm enter">Ввод</button>
+											</div>
+										</div>
+									</div>
+									<div class="android-power-button">
+										<span class="glyphicon glyphicon-star"></span>
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>
