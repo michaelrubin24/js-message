@@ -8,6 +8,8 @@
 		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="node_modules/aos/dist/aos.js"></script>
 		<script src="scripts/android.js"></script>
+		<script src="node_modules/jquery.caret/dist/jquery.caret.js"></script>
+		<script src="node_modules/jquery.caret/dist/jquery.caret.min.js"></script>
 		<script src="scripts/custom_validation_rules.js"></script>
 		<script src="scripts/phrases.js"></script>
 		<script src="scripts/name_form_validation.js"></script>
@@ -16,8 +18,6 @@
 		<script src="scripts/authorisation.js"></script>
 		<script src="scripts/online.js"></script>
 		<script src="scripts/keyboard_script.js"></script>
-		<script src="node_modules/jquery.caret/dist/jquery.caret.min.js"></script>
-		<script src="node_modules/jquery.caret/dist/jquery.caret.js"></script>
 		<script src="scripts/script.js"></script>
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -98,18 +98,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="iphone-messages hidden">
+					<div id="iphone_messages" class="iphone-messages hidden">
 						<!-- <p class="test">Lorem ipsum dolor sit amet,elit esse cillum dolore eu fugiat nulla pariatuidat.</p>
 						<p class="test">Lorem ipsuolorderit cupidat.</p>
 						<p class="test">Lorem ipvoluptate velaecat cupidat.</p> -->
 
 					</div>
-					 <div class="iphone-input-message hidden input-group">
+					<div id="iphone_input_messages" class="iphone-input-message hidden input-group">
 							<span class="iphone-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
 							<input type="text" class="form-control iphone-text-message" aria-label="message" placeholder="Сообщение..." value="">
 							<span class="iphone-message-btn input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 					</div>
-					<div class="iphone-keyboard hidden keyboard-ru-iphone">
+					<div id="iphone_keyboard" class="iphone-keyboard hidden keyboard-ru-iphone">
 
 						<button class="btn btn-default btn-sm btn-iphone">й</button>
 						<button class="btn btn-default btn-sm btn-iphone">ц</button>
@@ -197,10 +197,55 @@
 							<button class="btn btn-default btn-sm probel btn-iphone">Пробел</button>
 							<button class="btn btn-default btn-sm enter enter-iphone">Ввод</button>
 						</div>
+
+						<div class="iphone-keyboard keyboard-number-iphone hidden-keyboard">
+                <button class="btn btn-default btn-sm btn-iphone">1</button>
+                <button class="btn btn-default btn-sm btn-iphone upper-button">2</button>
+                <button class="btn btn-default btn-sm btn-iphone">3</button>
+                <button class="btn btn-default btn-sm btn-iphone">4</button>
+                <button class="btn btn-default btn-sm btn-iphone">5</button>
+                <button class="btn btn-default btn-sm btn-iphone">6</button>
+                <button class="btn btn-default btn-sm btn-iphone">7</button>
+                <button class="btn btn-default btn-sm btn-iphone">8</button>
+                <button class="btn btn-default btn-sm btn-iphone">9</button>
+                <button class="btn btn-default btn-sm btn-iphone">0</button>
+                <button class="btn btn-default btn-sm btn-iphone">:hearts:</button>
+
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">!</button>
+                <button class="btn btn-default btn-sm btn-iphone doggy pd-l-1 ">@</button>
+                <button class="btn btn-default btn-sm btn-iphone">#</button>
+                <button class="btn btn-default btn-sm btn-iphone">$</button>
+                <button class="btn btn-default btn-sm btn-iphone">/</button>
+                <button class="btn btn-default btn-sm btn-iphone">^</button>
+                <button class="btn btn-default btn-sm btn-iphone">&</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">*</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6 pd-t-0 bracket":angry:</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6 pd-t-0 bracket">)</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-4">+</button>
+
+                <button class="btn btn-default btn-sm btn-iphone upper-button upper-case-iphone"><i class="fa fa-arrow-circle-up"></i></button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">-</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">'</button>
+                <button class="btn btn-default btn-sm btn-iphone">"</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">:</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">;</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">,</button>
+                <button class="btn btn-default btn-sm btn-iphone">?</button>
+                <button class="btn btn-default btn-sm btn-iphone">«/button>
+                <button class="btn btn-default btn-sm btn-iphone"»</button>
+                <button class="btn btn-default btn-sm btn-iphone pd-l-6">.</button>
+                <div class="action-buttons">
+                  <button class="btn btn-default btn-sm numbers numbers-iphone">123</button>
+                  <button class="btn btn-default btn-sm planet change-iphone-language"><i class="glyphicon glyphicon-globe"></i></button>
+                  <button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+                  <button class="btn btn-default btn-sm probel btn-iphone">Пробел</button>
+                  <button class="btn btn-default btn-sm enter enter-iphone">Ввод</button>
+                </div>
+              </div>
 					</div>
-					<div class="iphone-power-button">
-						<span class="glyphicon glyphicon-unchecked"></span>
-					</div>
+				</div>
+				<div class="iphone-power-button">
+					<span class="glyphicon glyphicon-unchecked"></span>
 				</div>
 			</div>
 			</div>
@@ -274,12 +319,17 @@
 												</div>
 											</div>
 										</div>
-										<div class="android-input-message hidden input-group">
+										<div id="android_messages" class="android-messages hidden">
+											<!-- <p class="test">Lorem ipsum dolor sit amet,elit esse cillum dolore eu fugiat nulla pariatuidat.</p>
+											<p class="test">Lorem ipsuolorderit cupidat.</p>
+											<p class="test">Lorem ipvoluptate velaecat cupidat.</p> -->
+										</div>
+										<div id="android_input_message" class="android-input-message hidden input-group">
 											 <span class="android-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
 											 <input type="text" class="form-control android-text-message" aria-label="message" placeholder="Напишите сообщение...">
 											 <span class="android-message-btn input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
 									 </div>
-									 <div class="android-keyboard hidden keyboard-ru-android">
+									 <div id="android_keyboard" class="android-keyboard hidden keyboard-ru-android">
 										 <button class="btn btn-default btn-sm btn-android">й</button>
 										 <button class="btn btn-default btn-sm btn-android">ц</button>
 										 <button class="btn btn-default btn-sm btn-android">у</button>
@@ -367,6 +417,51 @@
 												 <button class="btn btn-default btn-sm probel btn-android">Пробел</button>
 												 <button class="btn btn-default btn-sm enter enter-android">Ввод</button>
 											 </div>
+											 <div class="android-keyboard keyboard-number-android hidden-keyboard">
+                        <button class="btn btn-default btn-sm btn-android">1</button>
+                        <button class="btn btn-default btn-sm btn-android">2</button>
+                        <button class="btn btn-default btn-sm btn-android">3</button>
+                        <button class="btn btn-default btn-sm btn-android">4</button>
+                        <button class="btn btn-default btn-sm btn-android">5</button>
+                        <button class="btn btn-default btn-sm btn-android">6</button>
+                        <button class="btn btn-default btn-sm btn-android">7</button>
+                        <button class="btn btn-default btn-sm btn-androide">8</button>
+                        <button class="btn btn-default btn-sm btn-android">9</button>
+                        <button class="btn btn-default btn-sm btn-android">0</button>
+                        <button class="btn btn-default btn-sm btn-android">:hearts:</button>
+
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">!</button>
+                        <button class="btn btn-default btn-sm btn-android doggy pd-l-1 ">@</button>
+                        <button class="btn btn-default btn-sm btn-android">#</button>
+                        <button class="btn btn-default btn-sm btn-android">$</button>
+                        <button class="btn btn-default btn-sm btn-android">/</button>
+                        <button class="btn btn-default btn-sm btn-android">^</button>
+                        <button class="btn btn-default btn-sm btn-android">&</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">*</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6 pd-t-0 bracket":angry:</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6 pd-t-0 bracket">)</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-4">+</button>
+
+                        <button class="btn btn-default btn-sm btn-android upper-button upper-case-android"><i class="fa fa-arrow-circle-up"></i></button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">-</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">'</button>
+                        <button class="btn btn-default btn-sm btn-android">"</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">:</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">;</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">,</button>
+                        <button class="btn btn-default btn-sm btn-android upper-button">?</button>
+                        <button class="btn btn-default btn-sm btn-android">«/button>
+                        <button class="btn btn-default btn-sm btn-android"»</button>
+                        <button class="btn btn-default btn-sm btn-android pd-l-6">.</button>
+                        <div class="action-buttons">
+                          <button class="btn btn-default btn-sm numbers numbers-android">123</button>
+                          <button class="btn btn-default btn-sm planet change-android-language"><i class="glyphicon glyphicon-globe"></i></button>
+                          <button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+                          <button class="btn btn-default btn-sm probel btn-android">Пробел</button>
+                          <button class="btn btn-default btn-sm enter enter-android">Ввод</button>
+
+                        </div>
+                      </div>
 									 	</div>
 								 </div>
 								 <div class="android-power-button">

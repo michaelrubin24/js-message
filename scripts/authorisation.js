@@ -14,6 +14,9 @@ $(document).ready(function() {
     if (authorize($('#user_name_sign_up').val(), $('#password_sign_up').val())) {
       if (addToOnline($('#user_name_sign_up').val())) {
         $('.sign-up-form').hide();
+        $('#iphone-messages').removeClass('hidden');
+        $('#iphone_input_messages').removeClass('hidden');
+        $('#iphone_keyboard').removeClass('hidden');
       } else {
         $('#sign_up_error').empty();
         $('#sign_up_error').text(validation_phrases.online_user);

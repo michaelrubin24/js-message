@@ -14,6 +14,9 @@ $(document).ready(function() {
     if (authorize($('#user_name_sign_up_android').val(), $('#password_sign_up_android').val())) {
       if (addToOnline($('#user_name_sign_up_android').val())) {
         $('#sign_up_form_android').hide();
+        $('#android-messages').removeClass('hidden');
+        $('#android_input_message').removeClass('hidden');
+        $('#android_keyboard').removeClass('hidden');
       } else {
         $('#sign_up_error_android').empty();
         $('#sign_up_error_android').text(validation_phrases.online_user);
