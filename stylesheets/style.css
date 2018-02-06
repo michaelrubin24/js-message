@@ -1,0 +1,445 @@
+.hidden {
+  display: none;
+}
+
+input.error {
+ border: 1px solid #ff0000;
+}
+
+label.error {
+  position: absolute;
+  color: #ff0000;
+  font-weight: normal;
+}
+
+label.server-error {
+  color: #ff0000;
+  font-weight: normal;
+}
+
+div.server-error {
+  width: 10px;
+}
+
+div#ty-for-registration {
+  margin: 0 auto;
+}
+
+div#ty-for-registration p {
+  margin-top: 150px;
+}
+
+div#ty-for-registration_android {
+  margin: 0 auto;
+}
+
+div#ty-for-registration_android p {
+  margin-top: 150px;
+}
+
+.container-both-phones{
+  border: 1px solid #8078B9;
+}
+
+.iphone-container{
+  background: purple;
+}
+
+.android-container{
+  background: green;
+}
+
+/*.user-online-info {
+  position: absolute;
+  margin: 0 auto;
+  height: 50px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: white;
+}*/
+
+.iphone-body, .android-body{
+  padding-top: 40px;
+  width: 300px;
+  height: 500px;
+  margin: 75px auto 75px auto;
+ }
+
+.iphone-body{
+  border-radius: 14px;
+  background: black;
+  width: 300px;
+ }
+ .android-body{
+   width: 286px;
+   border-radius: 28px;
+   background: radial-gradient(circle at 80px 40px, #f9eec7, #ffb60f, #ffb60f);
+   /* background: #CAD9EE; */
+   /* background: #A3EEDB;---- */
+   /* background: #A9B8CD; */
+   /* background: radial-gradient(#CAD9EE, #fff); */
+   /* background: radial-gradient(circle farthest-corner at 30px 20px, #fff,  #A3EEDB); */
+   /* background: radial-gradient(circle farthest-corner at 30px 20px, #A9B8CD,  #A3EEDB); */
+   /* background: radial-gradient(circle at 80px 40px, #f9eec7, #A3EEDB, #CAD9EE); */
+ }
+.iphone-screen, .android-screen{
+  position: relative;
+  margin: 20px auto;
+  height: 380px;
+  background: white;
+  margin-bottom: 0px;
+  padding-top: 4px;
+}
+
+.iphone-screen{
+  width: 260px;
+  border-radius: 2px;
+}
+.android-screen{
+  width: 268px;
+  border-radius: 2px;
+}
+
+.message-wrapper-iphone, .message-wrapper-android {
+  position: relative;
+  text-align: center;
+  width: 120px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  margin-bottom: 17px;
+  padding:1px;
+}
+
+.message-wrapper-iphone:before, .message-wrapper-android:before{
+  content: ' ';
+  position: absolute;
+  width: 2px;
+  top: 100%;
+  border: 11px solid;
+}
+
+.message-wrapper-iphone{
+  background: blue;
+  border: 6px solid blue;
+  margin-left: 4px;
+}
+.message-wrapper-iphone:before{
+  left: 25px;
+	border-color: blue transparent transparent blue;
+}
+
+.message-wrapper-android{
+  background: #4BDAE2;
+  border: 6px solid #4BDAE2;
+  margin-left: 120px;
+}
+
+.message-wrapper-android:before{
+  right: 12px;
+	border-color: #4BDAE2 transparent transparent #4BDAE2;
+  transform: rotate(90deg);
+}
+
+.message-iphone, .message-android{
+  width: 90px;
+  color: white;
+  overflow-x:hidden;
+  word-wrap:break-word;
+  font-weight: bold;
+}
+
+.samsung-logo{
+  display:inline-block;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  letter-spacing: 3px;
+  color: #FFFCFB;
+  font-size: 20px;
+  font-weight: bold;
+ }
+
+.welcome-window {
+  width: 100%;
+  height: 100%;
+  background-color: #6d0606;
+}
+
+.welcome-window_android {
+  width: 100%;
+  height: 100%;
+  background-color: #6d0606;
+}
+
+.brand-name {
+  margin-top: 105px;
+  color: white;
+  font-family: fantasy;
+  font-size: 70px;
+  font-weight: 600;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.brand-divider {
+  height: 2px;
+  width: 240px;
+  background-color: white;
+}
+
+.brand-inscription {
+  color: white;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.sign-buttons {
+  margin-top: 50px;
+}
+
+.registration-form {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #04efad;
+}
+
+.registration-form_android {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #04efad;
+}
+
+.sign-up-form {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #04efad;
+}
+
+.sign-up-form_android {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #04efad;
+}
+
+div.mg-top-40px {
+  margin-top: 40px;
+}
+
+div.mg-top-10px {
+  width: 10px;
+}
+
+div.mg-bot-40px {
+  margin-bottom: 40px;
+}
+
+div.mg-bot-20px {
+  margin-bottom: 20px;
+}
+
+ .iphone-messages{
+   height: 242px;
+   overflow-y: scroll;
+ }
+
+ .iphone-input-message, .android-input-message{
+  position: absolute;
+  bottom: 90px;
+  margin-bottom: 10px;
+ }
+
+ .iphone-messages{
+   background-image: url("../images/animals.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .android-messages{
+   background-image: url("../images/flowers.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+.iphone-input-message span , .android-input-message span{
+  background: #FFF;
+}
+
+.iphone-input-message span:hover, .android-input-message span:hover{
+  cursor: pointer;
+  border: 1px solid #66AFE9;
+}
+
+.android-message-btn, .android-select-keyboard{
+  color: #ffb60f;
+}
+
+.iphone-message-btn:hover, .android-message-btn:hover{
+  box-shadow: inset 0 0 6px;
+}
+
+.iphone-keyboard{
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  padding: 0 10px;
+  background: #D1D4D9;
+ }
+ .android-keyboard{
+   position: absolute;
+   bottom: 0px;
+   height: 100px;
+   padding: 0 14px;
+   background: #f9eec7;
+  }
+
+  .hidden-keyboard{
+    display: none;
+  }
+
+.iphone-keyboard .btn-sm, .android-keyboard .btn-sm {
+  width: 18px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Helvetica;
+  padding-top: 0px;
+  padding-left: 4px;
+  margin-top: 2px;
+  background: #FFFFFF;
+  }
+
+ .action-buttons{
+   margin-top: 2px;
+ }
+
+ .action-buttons .btn-sm{
+   width: 24px;
+   height: 24px;
+ }
+
+ .action-buttons .probel{
+   width: 88px;
+   padding-left: 12px;
+ }
+
+ .action-buttons .enter{
+   width: 58px;
+   padding-left: 10px;
+ }
+
+  .action-buttons .numbers{
+   width: 30px;
+   padding-left: 2px;
+ }
+
+ .action-buttons .planet{
+   width: 24px;
+   padding-left: 4px;
+   padding-top: 2px;
+
+ }
+
+  .action-buttons .microphone{
+   width: 20px;
+   padding-left: 4px;
+   padding-top: 2px;
+   font-size: 12px;
+ }
+
+ .upper-button{
+   padding-left: 2.5px !important;
+ }
+.pd-l-1{
+  padding-left: 1px !important;
+}
+.pd-l-4{
+  padding-left: 4px !important;
+}
+.pd-l-6{
+  padding-left: 6px !important;
+}
+.pd-t-0{
+  padding-top: 0px !important;
+}
+.bracket, .doggy{
+  font-size: 12px !important;
+}
+.doggy{
+  padding-left: 2px !important;
+}
+
+ .iphone-power-button{
+   width: 40px;
+   height: 40px;
+   border: 1px solid white;
+   border-radius: 20px;
+   background-color: black;
+   background: linear-gradient(to bottom,  #000, #fff);
+   margin: 10px auto;
+   padding-top: 5px;
+   padding-left: 8px;
+   color: black;
+   font-size: 24px;
+   box-shadow: inset 0 0 6px;
+ }
+
+ .android-power-button{
+    /* width: 40px;
+   height: 40px;
+   border: 1px solid white;
+   border-radius: 20px;
+   background-color: black;
+   background: linear-gradient(to bottom,  #000, #fff);
+   margin: 4px auto 10px auto;*/
+   padding-top: 0px;
+   padding-left: 26px;
+   color: #ffb60f;
+   font-size: 20px;
+   margin: 12px auto 10px auto;
+   box-shadow: inset 0 0 6px;
+   width: 70px;
+   height:26px;
+   background: white;
+   border: 2px solid #66AFE9;
+   border-radius: 24px;
+ }
+
+ .iphone-power-button:hover, .android-power-button:hover{
+   cursor: pointer;
+   opacity: 0.7;
+   border: 2px solid green;
+ }
+ .android-power-button:hover{
+   border: 3px solid #66AFE9;
+ }
+
+ .hidden-keyboard{
+     display: none;
+   }
+
+ .upper-button{
+    padding-left: 2.5px !important;
+  }
+ .pd-l-1{
+   padding-left: 1px !important;
+ }
+ .pd-l-4{
+   padding-left: 4px !important;
+ }
+ .pd-l-6{
+   padding-left: 6px !important;
+ }
+ .pd-t-0{
+   padding-top: 0px !important;
+ }
+ .bracket, .doggy{
+   font-size: 12px !important;
+ }
+ .doggy{
+   padding-left: 2px !important;
+ }
