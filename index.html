@@ -30,7 +30,6 @@
 		<div class="container-fluid container-both-phones">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 iphone-container">
-					<!-- <div class="user-online-info"></div> -->
 					<div class="iphone-body" data-aos-once="true" data-aos="slide-down" data-aos-duration="1500">
 						<div class="iphone-screen">
 							<div class="welcome-window">
@@ -100,15 +99,17 @@
 						</div>
 					</div>
 					<div class="iphone-messages hidden">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat.</p>							</div>
-					<div class="iphone-input-message input-group hidden">
-						<span class="iphone-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
-						<input type="text" class="form-control iphone-text-message" aria-label="message" placeholder="Сообщение..." value="">
-						<span class="iphone-message-btn input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						<!-- <p class="test">Lorem ipsum dolor sit amet,elit esse cillum dolore eu fugiat nulla pariatuidat.</p>
+						<p class="test">Lorem ipsuolorderit cupidat.</p>
+						<p class="test">Lorem ipvoluptate velaecat cupidat.</p> -->
+
 					</div>
-					<div class="iphone-keyboard hidden">
+					 <div class="iphone-input-message hidden input-group">
+							<span class="iphone-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+							<input type="text" class="form-control iphone-text-message" aria-label="message" placeholder="Сообщение..." value="">
+							<span class="iphone-message-btn input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					</div>
+					<div class="iphone-keyboard hidden keyboard-ru-iphone">
 
 						<button class="btn btn-default btn-sm btn-iphone">й</button>
 						<button class="btn btn-default btn-sm btn-iphone">ц</button>
@@ -147,21 +148,66 @@
 						<button class="btn btn-default btn-sm btn-iphone">*</button>
 						<div class="action-buttons">
 							<button class="btn btn-default btn-sm numbers">123</button>
-							<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
+							<button class="btn btn-default btn-sm planet change-iphone-language"><i class="glyphicon glyphicon-globe"></i></button>
 							<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+							<button class="btn btn-default btn-sm probel btn-iphone">Пробел</button>
+							<button class="btn btn-default btn-sm enter enter-iphone">Ввод</button>
 						</div>
 					</div>
+					<div class="iphone-keyboard keyboard-en-iphone hidden-keyboard">
+						<button class="btn btn-default btn-sm btn-iphone">q</button>
+						<button class="btn btn-default btn-sm btn-iphone upper-button">w</button>
+						<button class="btn btn-default btn-sm btn-iphone">e</button>
+						<button class="btn btn-default btn-sm btn-iphone">r</button>
+						<button class="btn btn-default btn-sm btn-iphone">t</button>
+						<button class="btn btn-default btn-sm btn-iphone">y</button>
+						<button class="btn btn-default btn-sm btn-iphone">u</button>
+						<button class="btn btn-default btn-sm btn-iphone pd-l-6">i</button>
+						<button class="btn btn-default btn-sm btn-iphone">o</button>
+						<button class="btn btn-default btn-sm btn-iphone">p</button>
+						<button class="btn btn-default btn-sm btn-iphone">♥</button>
+
+						<button class="btn btn-default btn-sm btn-iphone">a</button>
+						<button class="btn btn-default btn-sm btn-iphone">s</button>
+						<button class="btn btn-default btn-sm btn-iphone">d</button>
+						<button class="btn btn-default btn-sm btn-iphone">f</button>
+						<button class="btn btn-default btn-sm btn-iphone">g</button>
+						<button class="btn btn-default btn-sm btn-iphone">h</button>
+						<button class="btn btn-default btn-sm btn-iphone pd-l-6">j</button>
+						<button class="btn btn-default btn-sm btn-iphone">k</button>
+						<button class="btn btn-default btn-sm btn-iphone pd-l-6">l</button>
+						<button class="btn btn-default btn-sm btn-iphone">♠</button>
+						<button class="btn btn-default btn-sm btn-iphone pd-l-1">☻</button>
+
+						<button class="btn btn-default btn-sm btn-iphone upper-button upper-case-iphone"><i class="fa fa-arrow-circle-up"></i></button>
+						<button class="btn btn-default btn-sm btn-iphone">z</button>
+						<button class="btn btn-default btn-sm btn-iphone">x</button>
+						<button class="btn btn-default btn-sm btn-iphone">c</button>
+						<button class="btn btn-default btn-sm btn-iphone">v</button>
+						<button class="btn btn-default btn-sm btn-iphone">b</button>
+						<button class="btn btn-default btn-sm btn-iphone">n</button>
+						<button class="btn btn-default btn-sm btn-iphone upper-button">m</button>
+						<button class="btn btn-default btn-sm btn-iphone"><</button>
+						<button class="btn btn-default btn-sm btn-iphone">></button>
+						<button class="btn btn-default btn-sm btn-iphone">.</button>
+						<div class="action-buttons">
+							<button class="btn btn-default btn-sm numbers">123</button>
+							<button class="btn btn-default btn-sm planet change-iphone-language"><i class="glyphicon glyphicon-globe"></i></button>
+							<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+							<button class="btn btn-default btn-sm probel btn-iphone">Пробел</button>
+							<button class="btn btn-default btn-sm enter enter-iphone">Ввод</button>
+						</div>
 					</div>
 					<div class="iphone-power-button">
 						<span class="glyphicon glyphicon-unchecked"></span>
 					</div>
 				</div>
 			</div>
-
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 android-container">
-						<div class="android-body" data-aos-once="true" data-aos="slide-up" data-aos-duration="1500">
-							<span class="samsung-logo">samsung</span>
-							<div class="android-screen">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 android-container">
+				<div class="android-body" data-aos-once="true" data-aos="slide-up" data-aos-duration="1500">
+					<span class="samsung-logo">samsung</span>
+						<div class="android-screen">
 										<div id="welcome_window_android" class="welcome-window_android">
 											<div class="row">
 												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -228,59 +274,104 @@
 												</div>
 											</div>
 										</div>
-										<div class="android-input-message input-group hidden">
-											<span class="android-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
-											<input type="text" class="form-control" aria-label="message" placeholder="Напишите сообщение...">
-											<span class="android-message-btn input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
-										</div>
-										<div class="android-keyboard hidden">
-											<button class="btn btn-default btn-sm">й</button>
-											<button class="btn btn-default btn-sm">ц</button>
-											<button class="btn btn-default btn-sm">у</button>
-											<button class="btn btn-default btn-sm">к</button>
-											<button class="btn btn-default btn-sm">е</button>
-											<button class="btn btn-default btn-sm">н</button>
-											<button class="btn btn-default btn-sm">г</button>
-											<button class="btn btn-default btn-sm">ш</button>
-											<button class="btn btn-default btn-sm">щ</button>
-											<button class="btn btn-default btn-sm">з</button>
-											<button class="btn btn-default btn-sm">х</button>
+										<div class="android-input-message hidden input-group">
+											 <span class="android-select-keyboard input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>
+											 <input type="text" class="form-control android-text-message" aria-label="message" placeholder="Напишите сообщение...">
+											 <span class="android-message-btn input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+									 </div>
+									 <div class="android-keyboard hidden keyboard-ru-android">
+										 <button class="btn btn-default btn-sm btn-android">й</button>
+										 <button class="btn btn-default btn-sm btn-android">ц</button>
+										 <button class="btn btn-default btn-sm btn-android">у</button>
+										 <button class="btn btn-default btn-sm btn-android">к</button>
+										 <button class="btn btn-default btn-sm btn-android">е</button>
+										 <button class="btn btn-default btn-sm btn-android">н</button>
+										 <button class="btn btn-default btn-sm btn-android">г</button>
+										 <button class="btn btn-default btn-sm btn-androide">ш</button>
+										 <button class="btn btn-default btn-sm btn-android">щ</button>
+										 <button class="btn btn-default btn-sm btn-android">з</button>
+										 <button class="btn btn-default btn-sm btn-android">х</button>
 
-											<button class="btn btn-default btn-sm">ф</button>
-											<button class="btn btn-default btn-sm">ы</button>
-											<button class="btn btn-default btn-sm">в</button>
-											<button class="btn btn-default btn-sm">а</button>
-											<button class="btn btn-default btn-sm">п</button>
-											<button class="btn btn-default btn-sm">р</button>
-											<button class="btn btn-default btn-sm">о</button>
-											<button class="btn btn-default btn-sm">л</button>
-											<button class="btn btn-default btn-sm">д</button>
-											<button class="btn btn-default btn-sm">ж</button>
-											<button class="btn btn-default btn-sm">э</button>
+										 <button class="btn btn-default btn-sm btn-android">ф</button>
+										 <button class="btn btn-default btn-sm btn-android">ы</button>
+										 <button class="btn btn-default btn-sm btn-android">в</button>
+										 <button class="btn btn-default btn-sm btn-android">а</button>
+										 <button class="btn btn-default btn-sm btn-android">п</button>
+										 <button class="btn btn-default btn-sm btn-android">р</button>
+										 <button class="btn btn-default btn-sm btn-android">о</button>
+										 <button class="btn btn-default btn-sm btn-android">л</button>
+										 <button class="btn btn-default btn-sm btn-android">д</button>
+										 <button class="btn btn-default btn-sm btn-android">ж</button>
+										 <button class="btn btn-default btn-sm btn-android">э</button>
 
-											<button class="btn btn-default btn-sm">*</button>
-											<button class="btn btn-default btn-sm">я</button>
-											<button class="btn btn-default btn-sm">ч</button>
-											<button class="btn btn-default btn-sm">с</button>
-											<button class="btn btn-default btn-sm">м</button>
-											<button class="btn btn-default btn-sm">и</button>
-											<button class="btn btn-default btn-sm">т</button>
-											<button class="btn btn-default btn-sm">ь</button>
-											<button class="btn btn-default btn-sm">б</button>
-											<button class="btn btn-default btn-sm">ю</button>
-											<button class="btn btn-default btn-sm">*</button>
-											<div class="action-buttons">
-												<button class="btn btn-default btn-sm numbers">123</button>
-												<button class="btn btn-default btn-sm planet"><i class="glyphicon glyphicon-globe"></i></button>
-												<button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
-												<button class="btn btn-default btn-sm probel">Пробел</button>
-												<button class="btn btn-default btn-sm enter">Ввод</button>
-											</div>
-										</div>
-									</div>
-									<div class="android-power-button">
-										<span class="glyphicon glyphicon-star"></span>
-									</div>
+										 <button class="btn btn-default btn-sm btn-android upper-button upper-case-android"><i class="fa fa-arrow-circle-up"></i></button>
+										 <button class="btn btn-default btn-sm btn-android">я</button>
+										 <button class="btn btn-default btn-sm btn-android">ч</button>
+										 <button class="btn btn-default btn-sm btn-android">с</button>
+										 <button class="btn btn-default btn-sm btn-android">м</button>
+										 <button class="btn btn-default btn-sm btn-android">и</button>
+										 <button class="btn btn-default btn-sm btn-android">т</button>
+										 <button class="btn btn-default btn-sm btn-android">ь</button>
+										 <button class="btn btn-default btn-sm btn-android">б</button>
+										 <button class="btn btn-default btn-sm btn-android">ю</button>
+										 <button class="btn btn-default btn-sm btn-android">*</button>
+										 <div class="action-buttons">
+											 <button class="btn btn-default btn-sm numbers">123</button>
+											 <button class="btn btn-default btn-sm planet change-android-language"><i class="glyphicon glyphicon-globe"></i></button>
+											 <button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+											 <button class="btn btn-default btn-sm probel btn-android">Пробел</button>
+											 <button class="btn btn-default btn-sm enter enter-android">Ввод</button>
+										 </div>
+									 </div>
+
+										 <div class="android-keyboard keyboard-en-android hidden-keyboard">
+											 <button class="btn btn-default btn-sm btn-android">q</button>
+											 <button class="btn btn-default btn-sm btn-android upper-button">w</button>
+											 <button class="btn btn-default btn-sm btn-android">e</button>
+											 <button class="btn btn-default btn-sm btn-android">r</button>
+											 <button class="btn btn-default btn-sm btn-android">t</button>
+											 <button class="btn btn-default btn-sm btn-android">y</button>
+											 <button class="btn btn-default btn-sm btn-android">u</button>
+											 <button class="btn btn-default btn-sm btn-androide pd-l-6">i</button>
+											 <button class="btn btn-default btn-sm btn-android">o</button>
+											 <button class="btn btn-default btn-sm btn-android">p</button>
+											 <button class="btn btn-default btn-sm btn-android">♥</button>
+
+											 <button class="btn btn-default btn-sm btn-android">a</button>
+											 <button class="btn btn-default btn-sm btn-android">s</button>
+											 <button class="btn btn-default btn-sm btn-android">d</button>
+											 <button class="btn btn-default btn-sm btn-android">f</button>
+											 <button class="btn btn-default btn-sm btn-android">g</button>
+											 <button class="btn btn-default btn-sm btn-android">h</button>
+											 <button class="btn btn-default btn-sm btn-android pd-l-6">j</button>
+											 <button class="btn btn-default btn-sm btn-android">k</button>
+											 <button class="btn btn-default btn-sm btn-android pd-l-6">l</button>
+											 <button class="btn btn-default btn-sm btn-android">♦</button>
+											 <button class="btn btn-default btn-sm btn-android pd-l-1">☻</button>
+
+											 <button class="btn btn-default btn-sm btn-android upper-button upper-case-android"><i class="fa fa-arrow-circle-up"></i></button>
+											 <button class="btn btn-default btn-sm btn-android">z</button>
+											 <button class="btn btn-default btn-sm btn-android">x</button>
+											 <button class="btn btn-default btn-sm btn-android">c</button>
+											 <button class="btn btn-default btn-sm btn-android">v</button>
+											 <button class="btn btn-default btn-sm btn-android">b</button>
+											 <button class="btn btn-default btn-sm btn-android">n</button>
+											 <button class="btn btn-default btn-sm btn-android upper-button">m</button>
+											 <button class="btn btn-default btn-sm btn-android"><</button>
+											 <button class="btn btn-default btn-sm btn-android">></button>
+											 <button class="btn btn-default btn-sm btn-android">.</button>
+											 <div class="action-buttons">
+												 <button class="btn btn-default btn-sm numbers">123</button>
+												 <button class="btn btn-default btn-sm planet change-android-language"><i class="glyphicon glyphicon-globe"></i></button>
+												 <button class="btn btn-default btn-sm microphone"><i class="glyphicon glyphicon-headphones"></i></button>
+												 <button class="btn btn-default btn-sm probel btn-android">Пробел</button>
+												 <button class="btn btn-default btn-sm enter enter-android">Ввод</button>
+											 </div>
+									 	</div>
+								 </div>
+								 <div class="android-power-button">
+									 <span class="glyphicon glyphicon-star"></span>
+								 </div>
 								</div>
 					</div>
 				</div>

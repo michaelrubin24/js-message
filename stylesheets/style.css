@@ -297,6 +297,9 @@ div.mg-bot-20px {
    background: #f9eec7;
   }
 
+  .hidden-keyboard{
+    display: none;
+  }
 
 .iphone-keyboard .btn-sm, .android-keyboard .btn-sm {
   width: 18px;
@@ -351,7 +354,15 @@ div.mg-bot-20px {
  .upper-button{
    padding-left: 2.5px !important;
  }
-
+.pd-l-1{
+  padding-left: 1px !important;
+}
+.pd-l-4{
+  padding-left: 4px !important;
+}
+.pd-l-6{
+  padding-left: 6px !important;
+}
 
  .iphone-power-button{
    width: 40px;
