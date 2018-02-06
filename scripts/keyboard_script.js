@@ -22,6 +22,15 @@ var enter_iphone = $('.enter-iphone')[0];
 var upper_iphone = $('.upper-case-iphone');
 var upper_android = $('.upper-case-android');
 
+var keyboard_ru_iphone = $('.keyboard-ru-iphone');
+var keyboard_ru_android = $('.keyboard-ru-android');
+var keyboard_en_iphone = $('.keyboard-en-iphone');
+var keyboard_en_android = $('.keyboard-en-android');
+var change_iphone_language = $('.change-iphone-language');
+var change_android_language = $('.change-android-language');
+
+// .hidden-keyboard
+
 // console.log(upper);
 function fillTextArea(btn, text_message, upper){
   for (var i = 0; i < btn.length; i++) {
@@ -111,6 +120,33 @@ function toggleUpperCase(upper_iphone, upper_android){
     upper_android.toggleClass('active-upper');
   });
 }
+
+function changeLanguage(keyboard_ru_iphone, keyboard_ru_android, keyboard_en_iphone, keyboard_en_android, change_iphone_language, change_android_language){
+  console.log(2);
+  change_iphone_language.click(function(){
+        console.log(3);
+    keyboard_ru_iphone.toggleClass('hidden-keyboard');
+    keyboard_en_iphone.toggleClass('hidden-keyboard');
+  });
+  // change_iphone_language.addEventListener('click', function(){
+  //   keyboard_ru_iphone.toggleClass('hidden-keyboard');
+  //   keyboard_en_iphone.toggleClass('hidden-keyboard');
+  //   console.log(3);
+  // });
+  // change_android_language.addEventListener('click', function(){
+  //   keyboard_ru_android.toggleClass('hidden-keyboard');
+  //   keyboard_en_android.toggleClass('hidden-keyboard');
+  //   console.log(4);
+  // });
+
+
+  change_android_language.click(function(){
+    keyboard_ru_android.toggleClass('hidden-keyboard');
+    keyboard_en_android.toggleClass('hidden-keyboard');
+    console.log(4);
+  });
+}
+changeLanguage(keyboard_ru_iphone, keyboard_ru_android, keyboard_en_iphone, keyboard_en_android, change_iphone_language, change_android_language);
 toggleUpperCase(upper_iphone, upper_android);
 fillTextArea(btn_iphone, iphone_text_message, upper_iphone);
 fillTextArea(btn_android, android_text_message, upper_android);
